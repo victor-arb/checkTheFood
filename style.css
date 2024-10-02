@@ -38,10 +38,18 @@ main {
 .info-button {
     border: none;
     border-radius: 20px;
-    color: #333;
     background-color: #fb8c00;
     font-weight: bolder;
     padding: 12px 24px;
+}
+.info-button:hover {
+    background-color: #d27400;
+    /* cursor: pointer; */
+}
+.info-button a{
+    text-decoration: none;
+    color: #333;
+    /* padding: 12px 24px; */ /*Mismo padding del contenedor*/
 }
 .dishes {
     margin: 100px 0;
