@@ -14,6 +14,7 @@ html {
 main {
     max-width: 1200px;
     margin: 0 auto;
+    border-bottom: 1px solid #ddd;
 }
 .hero {
     display: grid;
@@ -98,7 +99,7 @@ main {
     object-fit: contain; /*Cambiar por cover para que se vea cuadrado y llene todo el contenedor*/
 }
 .menu {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .menu-title {
     font-size: 3.2rem;
@@ -129,6 +130,73 @@ main {
     object-fit: contain;   
 }
 
+.footer {
+    margin-top: 100px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links, .footer-info, .footer-designer {
+    flex: 1; /*Todos los contenedores inician arriba*/
+    min-width: 200px; /* Ancho mínimo para las secciones */
+    margin: 10px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+    font-size: 2.4rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+    
+}
+.footer-designer ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.footer-designer ul>li {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-designer ul>li:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+} 
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
 /*Va disminuyendo el max width, va desde desktoop a mobile*/
 @media screen and (max-width:768px) {
     .hero{
@@ -157,6 +225,10 @@ main {
     .video{
         max-height: 250px;
 
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media screen and (min-width: 900px) {

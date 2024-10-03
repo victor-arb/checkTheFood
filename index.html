@@ -5,66 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina que despliega el layout de un menu de comidas">
     <meta name="robots" content="index,follow">
-    <title>Menu Layout</title>
+    <title>Menu Layout Food</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
-        <section class="hero">
-            <div class="info">
-                <h1 class="info-title">Check the<br>best food</h1>
-                <p class="info-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, culpa.</p>
-                <button class="info-button"><a href="#">Book a table</a></button>
+        <main>
+            <section class="hero">
+                <div class="info">
+                    <h1 class="info-title">Check the<br>best food</h1>
+                    <p class="info-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, culpa.</p>
+                    <button class="info-button"><a href="#">Book a table</a></button>
+                </div>
+                <picture>
+                    <img class="hero-image" src="./images/hero.png" alt="Plato de pasta con salsa y vegetales">
+                </picture>
+            </section>
+            <section class="dishes">
+                <h2 class="dishes-title">Our Services</h2>
+                <div class="dishes-grid">
+                    <!--El siguiente video es vertical-->
+                    <video class="dishes-item dishes-item__big video" controls poster="./images/video.png" preload="auto">
+                        <source src="./videos/video-pasta.mp4#t=0,15" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                    <!-- <picture class="dishes-item dishes-item__big">
+                        <img class=" " src="./images/video.png" alt="Una mesa con platos de pasta, referencia a un video">
+                    </picture> -->
+                    <picture class="dishes-item">
+                        <img  src="./images/dish1.png" alt="bowl de vegetales">
+                    </picture>
+                    <picture class="dishes-item">
+                        <img  src="./images/dish2.png" alt="bowl de vegetales">
+                    </picture>
+                    <picture class="dishes-item">
+                        <img  src="./images/dish3.png" alt="bowl de vegetales">
+                    </picture>
+                    <picture class="dishes-item">
+                        <img src="./images/dish4.png" alt="bowl de vegetales">
+                    </picture>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="menu-title">Home menu</h2>
+                <div class="menu-grid">
+                    <picture class="menu-grid-item">
+                        <img src="./images/plate1.png" alt="Plato de pasta con salsa y vegetales">
+                    </picture>
+                    <picture class="menu-grid-item">
+                        <img src="./images/plate2.png" alt="Plato de pasta con salsa y vegetales">
+                    </picture>
+                    <picture class="menu-grid-item">
+                        <img src="./images/plate3.png" alt="Plato de pasta con salsa y vegetales">
+                    </picture>
+                    <picture class="menu-grid-item">
+                        <img src="./images/plate4.png" alt="Plato de pasta con salsa y vegetales">
+                    </picture>
+                    <picture class="menu-grid-item">
+                        <img src="./images/plate5.png" alt="Plato de pasta con salsa y vegetales">
+                    </picture>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
             </div>
-            <picture>
-                <img class="hero-image" src="./images/hero.png" alt="Plato de pasta con salsa y vegetales">
-            </picture>
-        </section>
-        <section class="dishes">
-            <h2 class="dishes-title">Our Services</h2>
-            <div class="dishes-grid">
-                <!--El siguiente video es vertical-->
-                <video class="dishes-item dishes-item__big video" controls poster="./images/video.png" preload="auto">
-                    <source src="./videos/video-pasta.mp4#t=0,15" type="video/mp4">
-                    Tu navegador no soporta el video.
-                </video>
-                <!-- <picture class="dishes-item dishes-item__big">
-                    <img class=" " src="./images/video.png" alt="Una mesa con platos de pasta, referencia a un video">
-                </picture> -->
-                <picture class="dishes-item">
-                    <img  src="./images/dish1.png" alt="bowl de vegetales">
-                </picture>
-                <picture class="dishes-item">
-                    <img  src="./images/dish2.png" alt="bowl de vegetales">
-                </picture>
-                <picture class="dishes-item">
-                    <img  src="./images/dish3.png" alt="bowl de vegetales">
-                </picture>
-                <picture class="dishes-item">
-                    <img src="./images/dish4.png" alt="bowl de vegetales">
-                </picture>
+            <div class="footer-info">
+                <h3>Información</h3>
+                <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
             </div>
-        </section>
-        <section class="menu">
-            <h2 class="menu-title">Home menu</h2>
-            <div class="menu-grid">
-                <picture class="menu-grid-item">
-                    <img src="./images/plate1.png" alt="Plato de pasta con salsa y vegetales">
-                </picture>
-                <picture class="menu-grid-item">
-                    <img src="./images/plate2.png" alt="Plato de pasta con salsa y vegetales">
-                </picture>
-                <picture class="menu-grid-item">
-                    <img src="./images/plate3.png" alt="Plato de pasta con salsa y vegetales">
-                </picture>
-                <picture class="menu-grid-item">
-                    <img src="./images/plate4.png" alt="Plato de pasta con salsa y vegetales">
-                </picture>
-                <picture class="menu-grid-item">
-                    <img src="./images/plate5.png" alt="Plato de pasta con salsa y vegetales">
-                </picture>
+            <div class="footer-designer">
+                <h3>Diseñado por</h3>
+                <p><a href="#">Victor Arbeláez</a><br>&copy; 2024 | Todos los derechos reservados.</p>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li>
+                        <a href="mailto:victorarbelaez6@gmail.com" target="_blank"><picture><img src="icons/email-24.png" alt="email icon"></picture></a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/victor-manuel-arbelaez-ramirez/" target="_blank">
+                            <picture><img src="icons/linkedin.svg" alt="LinkedIn icon"></picture>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/victor-arb" target="_blank"><picture><img src="icons/github.svg" alt="Github icon"></picture></a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><picture><img src="icons/instagram.svg" alt="Instagram icon"></picture></a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><picture><img src="icons/facebook.svg" alt="Facebook icon"></picture></a>
+                        
+                    </li>
+                </ul>
             </div>
-        </section>
-    </main>
-</body>
+        </div>
+    </footer>
+    
+    
+
 </html>
