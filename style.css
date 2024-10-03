@@ -1,7 +1,6 @@
 /*Este proyecto no es mobile first, se hizo responsive a partir del desktop*/
 :root {
     --text-color: #333;
-    --light-color: #ddd; /*Para el fondo*/
     --button-color: #fb8c00; 
     --white-color: #fff; /*Para el hover*/
 }
@@ -33,20 +32,20 @@ main {
     padding: 20px;
 }
 .info-title{
-    color: #333;
+    color: var(--text-color);
     font-size: 4.8rem;
     font-weight: bolder;
     margin-bottom: 24px;
 }
 .info-subtitle {
-    color: #333;
+    color: var(--text-color);
     font-size: 2.4rem;
     margin-bottom: 24px;
 }
 .info-button {
     border: none;
     border-radius: 20px;
-    background-color: #fb8c00;
+    background-color: var(--button-color);
     font-weight: bolder;
     padding: 12px 24px;
 }
@@ -56,17 +55,17 @@ main {
 }
 .info-button a{
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
     /* padding: 12px 24px; */ /*Mismo padding del contenedor*/
 }
 .info-button a:hover{
-    color: #fff;
+    color: var(--white-color);
 }
 .dishes {
     margin: 100px 0;
 }
 .dishes-title {
-    color: #333;
+    color: var(--text-color);
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
@@ -74,7 +73,7 @@ main {
 }
 .dishes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(75px,200px));
+    grid-template-columns: repeat(auto-fit,minmax(75px,215px));
     grid-auto-rows: 1fr;
     gap: 25px;
     justify-content: center;
@@ -92,7 +91,7 @@ main {
 }
 .menu-title {
     font-size: 3.2rem;
-    color: #333;
+    color: var(--text-color);
     font-weight: bolder;
     text-align: center;
     margin-bottom: 50px;
@@ -105,9 +104,13 @@ main {
     grid-template-columns: repeat(auto-fit,150px);
 }
 .menu-grid-item {
-    background-color: coral;
+    background-color: rgba(243, 162, 205, 0.153);
     padding: 15px;
     border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.menu-grid-item:hover{
+    box-shadow: 0 0 20px #d0d0d0;
 }
 .menu-grid-item img{
     width: 100%;
@@ -140,4 +143,10 @@ main {
     .dishes-grid {
         grid-template-columns: repeat(auto-fit,minmax(75px,100px));
     }
+}
+@media screen and (min-width: 900px) {
+    main {
+        width: 1000px; /*Para que no crezca mas*/
+    }
+    
 }
