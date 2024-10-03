@@ -78,13 +78,24 @@ main {
     gap: 25px;
     justify-content: center;
 }
+
 .dishes-item img{
     width: 100%;
     height: 100%;
     object-fit: cover; /*Cubre toda la celda donde estan pintadas*/
 }
+
 .dishes-item__big {
     grid-area: 1 / 1 / 3 / 3; /*f0/c0/ff/cf*/
+}
+/*Video-servicios*/
+.video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*Para videos verticales hay que definir un height maximo, de esta forma no se daña la relacion de aspecto, usar contain*/
+    max-height: 500px;
+    object-fit: contain; /*Cambiar por cover para que se vea cuadrado y llene todo el contenedor*/
 }
 .menu {
     margin-bottom: 200px;
@@ -142,6 +153,10 @@ main {
     } */
     .dishes-grid {
         grid-template-columns: repeat(auto-fit,minmax(75px,100px));
+    }
+    .video{
+        max-height: 250px;
+
     }
 }
 @media screen and (min-width: 900px) {

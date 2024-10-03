@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Pagina que despliega el layout de un menu de comidas">
+    <meta name="robots" content="index,follow">
+    <title>Menu Layout</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -21,9 +23,14 @@
         <section class="dishes">
             <h2 class="dishes-title">Our Services</h2>
             <div class="dishes-grid">
-                <picture class="dishes-item dishes-item__big">
+                <!--El siguiente video es vertical-->
+                <video class="dishes-item dishes-item__big video" controls poster="./images/video.png" preload="auto">
+                    <source src="./videos/video-pasta.mp4#t=0,15" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+                <!-- <picture class="dishes-item dishes-item__big">
                     <img class=" " src="./images/video.png" alt="Una mesa con platos de pasta, referencia a un video">
-                </picture>
+                </picture> -->
                 <picture class="dishes-item">
                     <img  src="./images/dish1.png" alt="bowl de vegetales">
                 </picture>
